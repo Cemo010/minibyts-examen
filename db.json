@@ -1,0 +1,109 @@
+{
+  "producten": [
+    {
+      "id": "1",
+      "naam": "Gaming Muis",
+      "prijs": 29.99
+    },
+    {
+      "id": "2",
+      "naam": "Mechanisch Toetsenbord",
+      "prijs": 79.99
+    },
+    {
+      "id": "3",
+      "naam": "Gaming Headset",
+      "prijs": 49.99
+    },
+    {
+      "id": "4",
+      "naam": "Gaming Monitor",
+      "prijs": 199.99
+    }
+  ],
+  "bestellingen": [
+    {
+      "bestelNummer": 45578,
+      "klant": {
+        "naam": "Geennaammogelijk",
+        "email": "cemalturkyigit40@gmail.com",
+        "adres": "hhhhhhhh",
+        "telefoon": "061525266"
+      },
+      "producten": [
+        {
+          "id": "2",
+          "naam": "Mechanisch Toetsenbord",
+          "prijs": 79.99
+        },
+        {
+          "id": "3",
+          "naam": "Gaming Headset",
+          "prijs": 49.99
+        }
+      ],
+      "totaalPrijs": "129.98",
+      "datum": "16-6-2026, 13:34:57",
+      "id": "Pin7pPwtW_s"
+    },
+    {
+      "bestelNummer": 31188,
+      "klant": {
+        "naam": "Geennaammogelijk",
+        "email": "cemalturkyigit40@gmail.com",
+        "adres": "sjshhshs",
+        "telefoon": "22822929"
+      },
+      "producten": [
+        {
+          "id": "2",
+          "naam": "Mechanisch Toetsenbord",
+          "prijs": 79.99
+        },
+        {
+          "id": "3",
+          "naam": "Gaming Headset",
+          "prijs": 49.99
+        }
+      ],
+      "totaalPrijs": "129.98",
+      "datum": "16-6-2026, 13:38:30",
+      "id": "f9GFhofLST0"
+    },
+    {
+      "bestelNummer": 78042,
+      "klant": {
+        "naam": "CEMAL",
+        "email": "TURKI",
+        "adres": "hesseplaats",
+        "telefoon": "0615151515"
+      },
+      "producten": [
+        {
+          "id": "1",
+          "naam": "Gaming Muis",
+          "prijs": 29.99
+        },
+        {
+          "id": "2",
+          "naam": "Mechanisch Toetsenbord",
+          "prijs": 79.99
+        },
+        {
+          "id": "3",
+          "naam": "Gaming Headset",
+          "prijs": 49.99
+        },
+        {
+          "id": "4",
+          "naam": "Gaming Monitor",
+          "prijs": 199.99
+        }
+      ],
+      "totaalPrijs": "359.96",
+      "datum": "16-6-2026, 13:54:14",
+      "id": "WWboSD80lBE"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

@@ -1,14 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 
 function App() {
-  const producten = [
-    { id: 1, naam: "Gaming Muis", prijs: 29.99 },
-    { id: 2, naam: "Mechanisch Toetsenbord", prijs: 79.99 },
-    { id: 3, naam: "Gaming Headset", prijs: 49.99 },
-    { id: 4, naam: "Gaming Monitor", prijs: 199.99 },
-  ];
-
+  const [producten, setProducten] = useState([]);
   const [winkelmand, setWinkelmand] = useState([]);
   const [mandOpen, setMandOpen] = useState(false);
 
@@ -20,10 +14,24 @@ function App() {
   const [besteld, setBesteld] = useState(false);
   const [bestelNummer, setBestelNummer] = useState(null);
 
+  useEffect(() => {
+    fetch("http://localhost:3000/producten")
+      .then((response) => response.json())
+      .then((data) => setProducten(data));
+  }, []);
+
   const voegToe = (product) => {
     setWinkelmand([...winkelmand, product]);
     setMandOpen(true);
     setBesteld(false);
+  };
+
+  const verwijderProduct = (indexOmTeVerwijderen) => {
+    const nieuweWinkelmand = winkelmand.filter((product, index) => {
+      return index !== indexOmTeVerwijderen;
+    });
+
+    setWinkelmand(nieuweWinkelmand);
   };
 
   const plaatsBestelling = () => {
@@ -39,8 +47,31 @@ function App() {
   
     const nummer = Math.floor(Math.random() * 100000);
   
-    setBestelNummer(nummer);
-    setBesteld(true);
+    const bestelling = {
+      bestelNummer: nummer,
+      klant: {
+        naam: naam,
+        email: email,
+        adres: adres,
+        telefoon: telefoon,
+      },
+      producten: winkelmand,
+      totaalPrijs: totaalPrijs.toFixed(2),
+      datum: new Date().toLocaleString(),
+    };
+  
+    fetch("http://localhost:3000/bestellingen", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(bestelling),
+    })
+      .then((response) => response.json())
+      .then(() => {
+        setBestelNummer(nummer);
+        setBesteld(true);
+      });
   };
   const nieuweBestelling = () => {
     setWinkelmand([]);
@@ -52,7 +83,6 @@ function App() {
     setBestelNummer(null);
     setMandOpen(false);
   };
-
   const totaalPrijs = winkelmand.reduce((totaal, product) => {
     return totaal + product.prijs;
   }, 0);
@@ -130,12 +160,9 @@ function App() {
 
                 <p>Bedankt voor uw bestelling bij MiniByts.</p>
 
-<button
-  className="bestel-knop"
-  onClick={nieuweBestelling}
->
-  Nieuwe bestelling
-</button>
+                <button className="bestel-knop" onClick={nieuweBestelling}>
+                  Nieuwe bestelling
+                </button>
               </div>
             ) : (
               <>
