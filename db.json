@@ -2,150 +2,74 @@
   "producten": [
     {
       "id": "1",
-      "naam": "Gaming Muis",
-      "prijs": 29.99
+      "naam": "🍔 Mini Hamburger",
+      "prijs": 3.99
     },
     {
       "id": "2",
-      "naam": "Mechanisch Toetsenbord",
-      "prijs": 79.99
+      "naam": "🍕 Mini Pizza",
+      "prijs": 4.49
     },
     {
       "id": "3",
-      "naam": "Gaming Headset",
-      "prijs": 49.99
+      "naam": "🌭 Mini Hotdog",
+      "prijs": 2.99
     },
     {
       "id": "4",
-      "naam": "Gaming Monitor",
-      "prijs": 199.99
+      "naam": "🍟 Mini Frietjes",
+      "prijs": 2.49
+    },
+    {
+      "id": "5",
+      "naam": "🧀 Mini Kaassoufflé",
+      "prijs": 2.79
+    },
+    {
+      "id": "6",
+      "naam": "🥤 Mini Cola",
+      "prijs": 1.99
+    },
+    {
+      "id": "7",
+      "naam": "🍗 Mini Kipnuggets",
+      "prijs": 3.49
+    },
+    {
+      "id": "8",
+      "naam": "🍦 Mini IJsje",
+      "prijs": 2.29
     }
   ],
   "bestellingen": [
     {
-      "bestelNummer": 45578,
+      "bestelNummer": 13987,
       "klant": {
         "naam": "Geennaammogelijk",
         "email": "cemalturkyigit40@gmail.com",
-        "adres": "hhhhhhhh",
-        "telefoon": "061525266"
-      },
-      "producten": [
-        {
-          "id": "2",
-          "naam": "Mechanisch Toetsenbord",
-          "prijs": 79.99
-        },
-        {
-          "id": "3",
-          "naam": "Gaming Headset",
-          "prijs": 49.99
-        }
-      ],
-      "totaalPrijs": "129.98",
-      "datum": "16-6-2026, 13:34:57",
-      "id": "Pin7pPwtW_s"
-    },
-    {
-      "bestelNummer": 31188,
-      "klant": {
-        "naam": "Geennaammogelijk",
-        "email": "cemalturkyigit40@gmail.com",
-        "adres": "sjshhshs",
-        "telefoon": "22822929"
-      },
-      "producten": [
-        {
-          "id": "2",
-          "naam": "Mechanisch Toetsenbord",
-          "prijs": 79.99
-        },
-        {
-          "id": "3",
-          "naam": "Gaming Headset",
-          "prijs": 49.99
-        }
-      ],
-      "totaalPrijs": "129.98",
-      "datum": "16-6-2026, 13:38:30",
-      "id": "f9GFhofLST0"
-    },
-    {
-      "bestelNummer": 78042,
-      "klant": {
-        "naam": "CEMAL",
-        "email": "TURKI",
-        "adres": "hesseplaats",
-        "telefoon": "0615151515"
+        "adres": "hilgerbhoorn",
+        "telefoon": "01827239"
       },
       "producten": [
         {
           "id": "1",
-          "naam": "Gaming Muis",
-          "prijs": 29.99
+          "naam": "🍔 Mini Hamburger",
+          "prijs": 3.99
         },
         {
           "id": "2",
-          "naam": "Mechanisch Toetsenbord",
-          "prijs": 79.99
+          "naam": "🍕 Mini Pizza",
+          "prijs": 4.49
         },
         {
           "id": "3",
-          "naam": "Gaming Headset",
-          "prijs": 49.99
-        },
-        {
-          "id": "4",
-          "naam": "Gaming Monitor",
-          "prijs": 199.99
+          "naam": "🌭 Mini Hotdog",
+          "prijs": 2.99
         }
       ],
-      "totaalPrijs": "359.96",
-      "datum": "16-6-2026, 13:54:14",
-      "id": "WWboSD80lBE"
-    },
-    {
-      "bestelNummer": 26586,
-      "klant": {
-        "naam": "cemak",
-        "email": "ttt",
-        "adres": "hhhhh",
-        "telefoon": "rrrrr"
-      },
-      "producten": [
-        {
-          "id": "2",
-          "naam": "Mechanisch Toetsenbord",
-          "prijs": 79.99
-        }
-      ],
-      "totaalPrijs": "79.99",
-      "datum": "17-6-2026, 00:05:18",
-      "id": "NGjsbbTEhrI"
-    },
-    {
-      "bestelNummer": 62230,
-      "klant": {
-        "naam": "Cemal",
-        "email": "cemalturkyigit40@gmail.com",
-        "adres": "Hillgersberg",
-        "telefoon": "061515243"
-      },
-      "producten": [
-        {
-          "id": "1",
-          "naam": "Gaming Muis",
-          "prijs": 29.99
-        },
-        {
-          "id": "2",
-          "naam": "Mechanisch Toetsenbord",
-          "prijs": 79.99
-        }
-      ],
-      "totaalPrijs": "109.98",
-      "datum": "17-6-2026, 10:25:39",
-      "id": "VePuFzrIxr4"
+      "totaalPrijs": "11.47",
+      "datum": "17-6-2026, 11:05:44",
+      "id": "WRp1VrdhnmA"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

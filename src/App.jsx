@@ -97,9 +97,8 @@ function App() {
         </button>
       </header>
 
-      <section className="welcome">
-        <h1>Welkom bij MiniByts</h1>
-      </section>
+      <h1>Welkom bij MiniByts</h1>
+<p>De lekkerste mini snacks voor de beste prijs!</p>
 
       <main className="producten">
         {producten.map((product) => (
@@ -113,10 +112,9 @@ function App() {
 
       <footer className="footer">
   <h3>MiniByts</h3>
-  <p>Gaming accessoires voor de beste prijs.</p>
+  <p>Mini snacks voor elke trek.</p>
   <p>📧 info@minibyts.nl</p>
   <p>📞 010-1234567</p>
-  <p>© 2026 MiniByts - Alle rechten voorbehouden</p>
 </footer>
 
       <div
