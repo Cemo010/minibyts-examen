@@ -111,7 +111,13 @@ function App() {
         ))}
       </main>
 
-      <footer className="footer">Footer</footer>
+      <footer className="footer">
+  <h3>MiniByts</h3>
+  <p>Gaming accessoires voor de beste prijs.</p>
+  <p>📧 info@minibyts.nl</p>
+  <p>📞 010-1234567</p>
+  <p>© 2026 MiniByts - Alle rechten voorbehouden</p>
+</footer>
 
       <div
         className={mandOpen ? "overlay show" : "overlay"}
